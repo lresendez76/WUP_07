@@ -32,6 +32,10 @@ state of a patient must be died or alive - we adjust that as well
   
 # Your Question - Is dying independent of sex?
 
+$H_0$:
+There is no difference between death rates depending upon sex.
+
+$H_A$: There is a difference between death rates depending upon sex.
 
 # Methods
 
@@ -71,7 +75,23 @@ This numerical summery shows that more males died as apposed to women.
 ## Inferential results 
 
 
+## Inferential  
+
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+fisher.test(table2)
+```
+
+The P- Value for the chi score test is 0.001, so we reject the null hypothesis that and death by Covid is related.
+
+The fisher exact test shows that men are 2.3 times more likely to die than women in Korea.
+
+
 
 
 ## Conclusions
+
+
+In conclusion we must reject the null hypothesis that Covid deaths between men and women are not dependent on sex. The p value states the results were to small to indicate a difference in sex.
 
