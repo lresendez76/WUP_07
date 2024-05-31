@@ -45,9 +45,13 @@ cat~cat
 
 ## Graphical results - use ggplot commands to do this  
 
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
 
+```
 
-  
+  This bar chart shows that more women lived than died. It also shows that more men died over women. 
 
 
 
